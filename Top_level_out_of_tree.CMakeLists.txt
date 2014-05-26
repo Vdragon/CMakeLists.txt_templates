@@ -7,16 +7,6 @@ cmake_minimum_required(VERSION 2.8)
 # 使用相對路徑
 set (CMAKE_USE_RELATIVE_PATHS TRUE)
 
-# 設定專案路徑
-## 設定可執行檔的輸出目錄
-### set (CMAKE_RUNTIME_OUTPUT_DIRECTORY Buildsystem_CMake/Build/Libraries)
-## 設定靜態連結函式庫的輸出目錄
-### set (CMAKE_ARCHIVE_OUTPUT_DIRECTORY Buildsystem_CMake/Build/Libraries)
-## 設定動態連結函式庫的輸出目錄
-### set (CMAKE_LIBRARY_OUTPUT_DIRECTORY Buildsystem_CMake/Build/Libraries)
-## PDB?
-### set (CMAKE_RUNTIME_OUTPUT_DIRECTORY Buildsystem_CMake/Build/PDBs)
-
 # 設定建構類型
 ## Specifies the build type on single-configuration generators
 ### Possible values are empty, Debug, Release, RelWithDebInfo and MinSizeRel.
@@ -24,6 +14,16 @@ set (CMAKE_USE_RELATIVE_PATHS TRUE)
 ## Specifies the available build types on multi-config generators.
 ### This specifies what build types (configurations) will be available such as Debug, Release, RelWithDebInfo etc.
 ### set (CMAKE_CONFIGURATION_TYPES Debug)
+
+# 設定專案路徑
+## 設定可執行檔的輸出目錄
+### set (CMAKE_RUNTIME_OUTPUT_DIRECTORY Build/${CMAKE_BUILD_TYPE}/Libraries)
+## 設定靜態連結函式庫的輸出目錄
+### set (CMAKE_ARCHIVE_OUTPUT_DIRECTORY Build/${CMAKE_BUILD_TYPE}/Libraries)
+## 設定動態連結函式庫的輸出目錄
+### set (CMAKE_LIBRARY_OUTPUT_DIRECTORY Build/${CMAKE_BUILD_TYPE}/Libraries)
+## PDB?
+### set (CMAKE_RUNTIME_OUTPUT_DIRECTORY Build/PDBs)
 
 # 設定軟體安裝路徑前綴
 ## Install directory used by install.
