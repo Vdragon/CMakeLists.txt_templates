@@ -17,7 +17,7 @@ set (CMAKE_USE_RELATIVE_PATHS TRUE)
 
 # 設定專案路徑
 ## 設定可執行檔的輸出目錄
-### set (CMAKE_RUNTIME_OUTPUT_DIRECTORY Build/${CMAKE_BUILD_TYPE}/Libraries)
+### set (CMAKE_RUNTIME_OUTPUT_DIRECTORY Build/${CMAKE_BUILD_TYPE})
 ## 設定靜態連結函式庫的輸出目錄
 ### set (CMAKE_ARCHIVE_OUTPUT_DIRECTORY Build/${CMAKE_BUILD_TYPE}/Libraries)
 ## 設定動態連結函式庫的輸出目錄

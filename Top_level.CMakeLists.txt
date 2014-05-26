@@ -14,7 +14,7 @@ cmake_minimum_required(VERSION 2.8)
 
 # 設定專案路徑
 ## 設定可執行檔的輸出目錄
-### set (CMAKE_RUNTIME_OUTPUT_DIRECTORY Buildsystem_CMake/Build/Libraries)
+### set (CMAKE_RUNTIME_OUTPUT_DIRECTORY Buildsystem_CMake/Build)
 ## 設定靜態連結函式庫的輸出目錄
 ### set (CMAKE_ARCHIVE_OUTPUT_DIRECTORY Buildsystem_CMake/Build/Libraries)
 ## 設定動態連結函式庫的輸出目錄
