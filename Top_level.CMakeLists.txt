@@ -4,6 +4,14 @@ cmake_minimum_required(VERSION 2.8)
 # 設定專案名稱
 # project("未命名軟體專案")
 
+# 設定建構類型
+## Specifies the build type on single-configuration generators
+### Possible values are empty, Debug, Release, RelWithDebInfo and MinSizeRel.
+### set (CMAKE_BUILD_TYPE Debug)
+## Specifies the available build types on multi-config generators.
+### This specifies what build types (configurations) will be available such as Debug, Release, RelWithDebInfo etc.
+### set (CMAKE_CONFIGURATION_TYPES Debug)
+
 # 設定專案路徑
 ## 設定可執行檔的輸出目錄
 ### set (CMAKE_RUNTIME_OUTPUT_DIRECTORY Buildsystem_CMake/Build/Libraries)
@@ -13,14 +21,6 @@ cmake_minimum_required(VERSION 2.8)
 ### set (CMAKE_LIBRARY_OUTPUT_DIRECTORY Buildsystem_CMake/Build/Libraries)
 ## PDB?
 ### set (CMAKE_RUNTIME_OUTPUT_DIRECTORY Buildsystem_CMake/Build/PDBs)
-
-# 設定建構類型
-## Specifies the build type on single-configuration generators
-### Possible values are empty, Debug, Release, RelWithDebInfo and MinSizeRel.
-### set (CMAKE_BUILD_TYPE Debug)
-## Specifies the available build types on multi-config generators.
-### This specifies what build types (configurations) will be available such as Debug, Release, RelWithDebInfo etc.
-### set (CMAKE_CONFIGURATION_TYPES Debug)
 
 # 設定軟體安裝路徑前綴
 ## Install directory used by install.
