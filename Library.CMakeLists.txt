@@ -2,4 +2,8 @@
 cmake_minimum_required(VERSION 2.8)
 
 # 建構函式庫
-## add_library(<name> source_list_by_space)
+# aux_source_directory(. SOURCE_CODE_FILE_LIST)
+# message(STATUS "找到函式庫的來源程式碼檔案：${SOURCE_CODE_FILE_LIST}")
+# add_library(library_name ${SOURCE_CODE_FILE_LIST})
+# file(COPY *.h Build/${CMAKE_BUILD_TYPE}/Libraries)
+# return()
