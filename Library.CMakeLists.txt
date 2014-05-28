@@ -18,3 +18,6 @@ add_library(${project_name_abbreviation}_${library_name} ${SOURCE_CODE_FILE_LIST
 
 # 將函式庫 header 檔案複製一份到 Build/ 中
 # file(COPY .h Build/${CMAKE_BUILD_TYPE}/Libraries)
+# 安裝函式庫
+# install (TARGETS ${library_name} DESTINATION bin)
+# install (FILES ${library_name}.h DESTINATION 
